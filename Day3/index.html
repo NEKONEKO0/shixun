@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏厅</title>
+    <STYle>
+        #head {
+            height: 64px;
+            text-align: center;
+            background-color:grey;
+            padding: 32px;
+            
+        }
+        #head h1 {
+            margin: 0;
+        }
+        #left {
+            display: inline-block;
+            width: 25%;
+            background-color:silver;
+            vertical-align: top;
+            padding-bottom: 177%;
+        }
+        #left ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #left ul li {
+            border-bottom:1px solid black;
+        }
+        #left ul li:last-child {
+            border-bottom: 0;
+        }
+        #left ul li a {
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        #left ul li a:hover {
+            background-color:steelblue;
+        }
+        #right {
+            display: inline-block;
+            width: 74%;
+        }
+        #foot {
+            text-align: center;
+            background-color: grey;
+            padding: 6px;
+        }
+        .center {
+            text-align: center;
+        }
+        .price::before {
+            content: 'HK$';
+        }
+        .suojin {
+            text-indent: 2em;
+        }
+    </STYle>
+</head>
+<body>
+    <div id="head">
+        <h1 style="font-size: 48px;"><img src="./images/手柄.png" style="height: 48px;" > 一起玩游戏吗</h1>
+    </div>
+    <div>
+        <div id="left">
+            <ul>
+                <li><a href="#GTA5">《Grand Theft Auto V》</a></li>
+                <li><a href="#monsterhunter">《怪物猎人：世界》</a></li>
+                <li><a href="#detroit">《底特律：成为人类》</a></li>
+                <li><a href="#TLOU">《最后生还者》</a></li>
+            </ul>
+        </div>
+        
+        <div id="right">
+            <div class="center">
+                <img src="./images/游戏.JPG" style="width: 90%">
+            </div>
+            <table border="1" style="width: 60%;margin-left: auto;margin-right: auto;" class="center">
+                <tr>
+                    <th>游戏</th>
+                    <th>发售价格（以PlayStation商店为准）</th>
+                </tr>
+                <tr>
+                    <td>《Grand Theft Auto V》</td>
+                    <td><span class="price">468.00</span></td>
+                </tr>
+                <tr>
+                    <td>《怪物猎人：世界》</td>
+                    <td><span class="price">428.00</span></td>
+                </tr>
+                <tr>
+                    <td>《底特律：成为人类》</td>
+                    <td><span class="price">398.00</span></td>
+                </tr>
+                <tr>
+                    <td>《最后生还者》</td>
+                    <td><span class="price">310.00</span></td>
+                </tr>
+            </table>
+            <p>
+                 
+            </p>
+            <div class="center">
+                <img src="./images/GTA5.jpg" style="width: 50%;" id="GTA5">
+            </div>
+            <h2>《Grand Theft Auto V》</h2>
+            <p class="suojin">
+                《侠盗猎车手5》（Grand Theft Auto V），是由Rockstar Games游戏公司出版发行的一款围绕犯罪为主题的开放式动作冒险游戏。本作于2013年9月17日登陆Play Station 3、Xbox 360平台，2014年11月18日登陆Play Station 4和Xbox ONE平台。多人模式《侠盗猎车手Online》于2013年10月1日正式开放。PC版本已于2015年4月14日推出。
+                游戏背景洛圣都基于现实地区中的美国洛杉矶和加州南部制作，游戏拥有几乎与现实世界相同的世界观。玩家可扮演三位主角并在任意时刻进行切换（在做某些任务和在被通缉的时候不能切换），每位主角都有自己独特的人格与故事背景，以及交织的剧情。
+            </p>
+            <p class="suojin">
+                洛圣都，一个庞大且阳光普照的繁华都市，充满了自我救赎的大师们，贪官污吏们和落魄的名人们，一群被羡慕着的西方世界的居民却也正处于挣扎着生存的时代，衰落的经济和廉价的道义让这里混乱不堪。
+                面对滚滚而来的金融风暴，三个不同的怪咖绘制着自己生存和成功的蓝图。富兰克林是一个街头讨债者，寻找着真正的机遇和大笔的资金。麦克是一位名震四海的银行大盗兼职业犯罪者，金盆洗手之后他希望能过上更好的生活。崔佛是个变态的暴力狂和瘾君子，他驱动着无时不有的机会以及那辆载满了白粉的皮卡车。机缘巧合，他们走到了一起。为了自己想得到的一切，三人选择了一系列大胆而危险的犯罪行动
+            </p>
+            <div class="center">
+                <img src="./images/怪物猎人.jpg" style="width: 50%;" id="monsterhunter">
+            </div>
+            <h2>《怪物猎人：世界》</h2>
+            <p class="suojin">
+                《怪物猎人：世界》（モンスターハンターワールド）是卡普空采用MT Framework引擎开发制作达四年之久的第三人称角色扮演类动作游戏。
+            </p>
+            <p class="suojin">
+                《怪物猎人：世界》是由CAPCOM制作发行的一款动作冒险游戏，在全球范围内都享有盛赞，本代怪物猎人发生了诸多进化，玩法与画面都有非常巨大的进步，游戏最多支持16人联机集会所，4人联机狩猎。在游戏中玩家将扮演一位第五期团的推荐组猎人，探索新大陆的深处，解开古龙迁徙的秘密。猎人们必须利用他们的聪明才智和个人能力才能在激烈、变化多端的战斗中存活下来，并且最终成为“指引明路的苍蓝星”。
+            </p>
+            <div class="center">
+                <img src="./images/底特律.jpg" style="width: 50%;" id="detroit">
+            </div>
+            <h2>《底特律：成为人类》</h2>
+            <p class="suojin">
+                《底特律：成为人类》是由Quantic制作的一款人工智能题材互动电影游戏，2018年5月25日发售，对应PS4、PC平台。游戏的背景设定在2038年的虚拟底特律城，玩家将根据章节分别扮演三位主角卡拉、康纳、马库斯，在不同的选择中决定游戏结局。
+            </p>
+            <p class="suojin">
+                该作设定在2038年的美国底特律，这座城市因发明并将仿生人带入日常生活中而欣欣向荣。上百万有着人类外貌的智能仿生人根据自身定位、设定的不同扮演着保姆、建筑工、保安、销售等角色，人类得以从一些简单劳动中解放出来，仿生人也日渐成为现实生活中不可或缺的一部分，但这一切都将改变。
+                通过三位不同仿生人的视角，在这个新世界的混乱边缘徘徊。玩家的决定将会改变游戏的剧情和结局，底特律的未来都在玩家手中。
+            </p>
+            <div class="center">
+                <img src="./images/最后生还者.jpg" alt="" style="width: 50%;" id="TLOU" >
+            </div>
+            <h2>《最后生还者》</h2>
+            <P class="suojin">
+                《最后生还者》（The Last of Us）是由著名工作室顽皮狗第二团队秘密开发两年的作品，讲述了人类因现代传染病而面临绝种危机，当环境从废墟的都市再度自然化时，幸存的人类为了生存而自相残杀的故事。但是和以往的同类题材游戏有着很大的不同，两名主角个性鲜明，在探索困境下人类的心里波动，突出放大主角们的心里活动。
+                游戏在还未正式发售时，就已经提前征服了各大游戏媒体，截止到2013年6月它已经获得了共计30个媒体的满分。这些给出满分评价的网站媒体中包括IGN、Eurogamer、CVG、Edge等一干著名媒体，并在2013年大部分游戏媒体中享有极高的评价。
+            </P>
+            <p class="suojin">
+                在历尽艰辛的旅程中产生的羁绊：“爱”、“诚实”和“赎罪”的故事。
+                故事发生在"波士顿隔离区"，20年前这里曾发生过一次"真菌爆发"，毁灭了所有的现代文明，政府迅速封闭了整个城市以防真菌传播到外界，不过依然有幸存者在其中继续生活。后来，由于这种真菌的泄露和扩散，这种隔离失去了意义，整个美国人口密集的城市均遭真菌感染。 [4] 
+                玩家扮演着中年男性乔尔（Joel），为了完成“火萤”组织首领玛琳的托付而带着14岁少女艾莉（Ellie）一同踏出由军队保护的疫情隔离区，穿越化为废墟丛林的大都会。面对病毒感染变种人类与其他幸存者集团威胁，展开了一场改变两人一生的深刻旅程。
+            </p>
+        </div>
+    </div>
+    
+    <div id="foot">
+        版权所有 &copy; LHT
+    </div>
+</body>
+</html>
