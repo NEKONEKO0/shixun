@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>弹幕墙</title>       
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <div class="box">
+        <div class="top">
+        </div>
+        <div class="bot">
+            <input type="text" id="txt" placeholder="发个弹幕吧！" />
+            <button type="button" id="btn">发送</button>
+            <button type="button" id="clean">清屏</button>
+        </div>
+        <div class="footer">
+          版权所有&copy;LHT
+        </div>
+    </div>
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(function() {
+            var colors = ["red", "green", "blue", "pink", "cyan", "yellowgreen", "purple", "deepskyblue","silver"];
+            $("#btn").on("click", function() {
+               appendtext()
+            });
+
+            $("#clean").on("click", function() {
+               $("span").remove()
+            });
+            $(document).keydown(function(event){
+                if(event.keyCode==13)
+                appendtext();
+            })
+
+
+            function appendtext(){
+                var randomColor = parseInt(Math.random() * colors.length);
+                var randomY = parseInt(Math.random() * 580);
+                var randomSize = Math.floor(Math.random()*100)+2;
+                $("<span></span>") 
+                .text($("#txt").val()) 
+                .css("color", colors[randomColor]) 
+                .css("left", "1500px") 
+                .css("top", randomY) 
+                .css("font-size", randomSize+'px')
+                .animate({
+                    left: -500
+                    }, 10000, "linear", function() {
+                    
+                        $(this).remove();
+                    }) 
+                .appendTo(".top");
+                $("#txt").val("");
+            }
+        });
+    </script>
+</body>
+</html>
